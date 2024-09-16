@@ -8,6 +8,9 @@ int main(){
   if(answer == yes){
     cout << "Do you have a bachelor's degree? Type yes or no" << endl;
     cin >> answer;
+    if(answer == yes){
+      break;
+    }
     if(answer == no){
       cout << "Do you have at least two years experience? Type yes or no" << endl;
       cin << answer;
@@ -16,6 +19,7 @@ int main(){
         return 0;
       }
     }
+    
   }
   cout << "You are eligible for a job" << endl;
   return 0;
